@@ -14,12 +14,12 @@ class DenemeSinavlari extends StatefulWidget {
 
 class _DenemeSinavlariState extends State<DenemeSinavlari> {
   kpssOzetler seciliOzet = kpssOzetler.WithId(0, "", "");
-  kpssDenemeler seciliDeneme = kpssDenemeler.WithId(0, "", "");
+  kpssDenemeler seciliDeneme = kpssDenemeler.WithId(0, "");
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("DenemeSinavlari" + widget.seciliDers.toString()),
+        title: Text("DenemeSinavlari"),
       ),
       body: Column(
         children: <Widget>[
@@ -95,19 +95,19 @@ class _DenemeSinavlariState extends State<DenemeSinavlari> {
                   ),
                   child: ListTile(
                     title: Text(
-                      matematikOzetlerData[index].Adi,
+                      matematikDenemelerData[index].Adi,
                       style: TextStyle(),
                       // textAlign: Alignment.center,
                     ),
                     onTap: () {
                       setState(() {
-                        seciliOzet = matematikOzetlerData[index];
+                        seciliDeneme = matematikDenemelerData[index];
                       });
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context) =>
-                                  turkceOzetlerDetay(seciliOzet)));
+                                  DenemelerDetay(seciliDeneme)));
                     },
                     trailing: Icon(
                       Icons.double_arrow_sharp,

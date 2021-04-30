@@ -15,21 +15,5 @@ List<kpssBolumler> turkceBolumlerData = [
 
 List<kpssBolumler> matematikBolumlerData = [
   kpssBolumler("matematik", "Ozetler"),
-  kpssBolumler("matematik2", "Ozetler"),
-  kpssBolumler("matematik", "Ozetler"),
-  kpssBolumler("matematik2", "Ozetler"),
-  kpssBolumler("matematik", "Ozetler"),
-  kpssBolumler("matematik2", "Ozetler"),
-  kpssBolumler("matematik", "Ozetler"),
-  kpssBolumler("matematik2", "Ozetler"),
-  kpssBolumler("matematik", "Ozetler"),
-  kpssBolumler("matematik2", "Ozetler"),
-  kpssBolumler("matematik", "Ozetler"),
-  kpssBolumler("matematik2", "Ozetler"),
-  kpssBolumler("matematik", "Ozetler"),
-  kpssBolumler("matematik2", "Ozetler"),
-  kpssBolumler("matematik", "Ozetler"),
-  kpssBolumler("matematik2", "Ozetler"),
-  kpssBolumler("matematik", "Ozetler"),
-  kpssBolumler("matematik2", "Ozetler"),
+  kpssBolumler("Deneme Sınavi", "DenemeSinavlari"),
 ];

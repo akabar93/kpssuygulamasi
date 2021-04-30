@@ -16,7 +16,7 @@ class _OzetlerState extends State<Ozetler> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Türkçe Özetler" + widget.seciliDers.toString()),
+        title: Text("Kpss Konu Özetleri"),
       ),
       body: Column(
         children: <Widget>[
@@ -59,8 +59,7 @@ class _OzetlerState extends State<Ozetler> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) =>
-                                  turkceOzetlerDetay(seciliOzet)));
+                              builder: (context) => OzetlerDetay(seciliOzet)));
                     },
                     trailing: Icon(
                       Icons.double_arrow_sharp,
@@ -103,8 +102,7 @@ class _OzetlerState extends State<Ozetler> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) =>
-                                  turkceOzetlerDetay(seciliOzet)));
+                              builder: (context) => OzetlerDetay(seciliOzet)));
                     },
                     trailing: Icon(
                       Icons.double_arrow_sharp,

@@ -2,19 +2,18 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:kpssuygulamasi/models/OzetlerData.dart';
 
-class turkceOzetlerDetay extends StatefulWidget {
+class OzetlerDetay extends StatefulWidget {
   kpssOzetler seciliOzet;
-  turkceOzetlerDetay(kpssOzetler seciliOzet) {
+  OzetlerDetay(kpssOzetler seciliOzet) {
     this.seciliOzet = seciliOzet;
   }
   @override
-  _turkceOzetlerDetayState createState() =>
-      _turkceOzetlerDetayState(seciliOzet);
+  _OzetlerDetayState createState() => _OzetlerDetayState(seciliOzet);
 }
 
-class _turkceOzetlerDetayState extends State<turkceOzetlerDetay> {
+class _OzetlerDetayState extends State<OzetlerDetay> {
   kpssOzetler seciliOzet;
-  _turkceOzetlerDetayState(kpssOzetler seciliOzet) {
+  _OzetlerDetayState(kpssOzetler seciliOzet) {
     this.seciliOzet = seciliOzet;
   }
   @override

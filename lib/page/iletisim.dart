@@ -2,6 +2,7 @@ import 'dart:html';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:kpssuygulamasi/models/iletisimData.dart';
 
 class iletisim extends StatefulWidget {
@@ -46,7 +47,9 @@ class _iletisimState extends State<iletisim> {
   Widget buildAdiniz() {
     return TextFormField(
       decoration: InputDecoration(labelText: "Adınız:"),
-      // validator: validateAdi,
+      validator: (value) {
+        return value.isEmpty ? "Bu alan Boş Geçilemez" : null;
+      },
       onSaved: (String value) {
         mesaj.adi = value;
         mesajGoster(context, value);
@@ -58,7 +61,9 @@ class _iletisimState extends State<iletisim> {
   Widget buildeposta() {
     return TextFormField(
       decoration: InputDecoration(labelText: "E-Posta:"),
-      //validator: validateEposta,
+      validator: (value) {
+        return value.isEmpty ? "Bu alan Boş Geçilemez" : null;
+      },
       onSaved: (String value) {
         mesaj.eposta = value;
         print("E Posta Adresi:" + mesaj.eposta);
@@ -69,7 +74,9 @@ class _iletisimState extends State<iletisim> {
   Widget buildtelefon() {
     return TextFormField(
       decoration: InputDecoration(labelText: "Telefon:"),
-      //validator: validateTelefon,
+      validator: (value) {
+        return value.isEmpty ? "Bu alan Boş Geçilemez" : null;
+      },
       onSaved: (String value) {
         mesaj.telefon = value;
         print("Telefon Numarası:" + mesaj.telefon);
@@ -80,12 +87,13 @@ class _iletisimState extends State<iletisim> {
   Widget buildmesaj() {
     return TextFormField(
       decoration: InputDecoration(labelText: "Mesaj:"),
-      //validator: validateMesaj,
+      validator: (value) {
+        return value.isEmpty ? "Bu alan Boş Geçilemez" : null;
+      },
       onSaved: (String value) {
         mesaj.mesaj = value;
 
         print("Mesajı :" + mesaj.mesaj);
-        print("mesaj");
       },
     );
   }

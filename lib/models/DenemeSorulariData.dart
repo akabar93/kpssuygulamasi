@@ -1,13 +1,11 @@
 var kpssDenemeSorulari = [
   {
     'DenemeKategoriid': 1,
-    'kpssSoru': 'Fatih Sultan Mehmet\'in babası kimdir?',
+    'kpssSoru': 'İlk flutter uygulamamız hangisidir ?',
     'kpssSoruSecenek': [
-      'I. Mehmet',
-      'II. Murat',
-      'Yıldırım Beyazıt',
-      'Anıl KABAR',
-      'sevd<',
+      'Kpss Uygulaması',
+      'Snav Uygulaması',
+      'Otomasyon Uygulaması',
     ],
     'kpssDogruCevap': 'II. Murat'
   },
