@@ -85,6 +85,7 @@ class _iletisimState extends State<iletisim> {
         mesaj.mesaj = value;
 
         print("Mesajı :" + mesaj.mesaj);
+        print("mesaj");
       },
     );
   }
