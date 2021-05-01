@@ -1,4 +1,3 @@
-import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:kpssuygulamasi/Utils/Enum.dart';
 import 'package:kpssuygulamasi/models/BolumlerData.dart';

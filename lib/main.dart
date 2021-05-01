@@ -1,9 +1,7 @@
-import 'dart:html';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:kpssuygulamasi/Utils/Enum.dart';
-import 'package:kpssuygulamasi/page/Bolumler.dart';
-import 'package:kpssuygulamasi/page/iletisim.dart'; //android görüntüsü için ekleniyor
+import 'package:kpssuygulamasi/page/Bolumler.dart';//android görüntüsü için ekleniyor
 import 'package:kpssuygulamasi/page/bottom_nav.dart'; //android görüntüsü için e
 
 void main() {
